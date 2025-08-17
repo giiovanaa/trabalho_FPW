@@ -1,0 +1,94 @@
+<!DOCTYPE html lang="pt-BR" <head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/a130a3744b.js" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="../style.css">
+            <title>FPW - Contato</title>
+        </head>
+        <body>
+            <header>
+                <ul>
+                    <li>
+                        <a class="link" href="../index.html">Início</a>
+                    </li>
+                    <li>
+                        <a class="link" href="../index.html#about">Sobre mim</a>
+                    </li>
+                    <li>
+                        <a class="link" href="./portfolio.html">Portfolio</a>
+                    </li>
+                    <li>
+                        <a class="link" href="contact.html">Contato</a>
+                    </li>
+                </ul>
+            </header>
+
+            <main>
+                <h2>Contato</h2>
+
+                <section id="contact">
+                    <form id="contact-form">
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="name"
+                            placeholder="NOME"
+                            name="name"
+                            required="required">
+
+                            <input
+                                type="email"
+                                class="form-control"
+                                id="email"
+                                placeholder="EMAIL"
+                                name="email"
+                                required="required">
+
+                                <textarea
+                                    class="form-control"
+                                    rows="5"
+                                    placeholder="MENSAGEM"
+                                    name="message"
+                                    required="required"></textarea>
+
+                                <button class="btn btn-primary send-button" id="submit" type="submit">
+                                    <span class="send-text">ENVIAR</span>
+                                </button>
+                            </form>
+
+                        </section>
+                    </main>
+
+                    <footer>
+                        <ul class="social-media-list">
+                            <li>
+                                <a href="https://github.com/giiovanaa" target="_blank" class="contact-icon">
+                                    <i class="fa fa-github" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://codepen.io/giiovana" target="_blank" class="contact-icon">
+                                    <i class="fa fa-codepen" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/giovana.blank/" target="_blank" class="contact-icon">
+                                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </footer>
+                    <script>
+                        document.addEventListener('DOMContentLoaded', () => {
+                            const form = document.querySelector('#contact-form');
+
+                            form.addEventListener('submit', (e) => {
+                                e.preventDefault();
+                                alert('Este formulário não está funcional. Por favor, entre em contato diretamente pelas redes sociais.');
+                                form.reset();
+                            });
+                        });
+                    </script>
+                </body>
+            </html>
