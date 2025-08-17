@@ -5,79 +5,67 @@
         <script src="https://kit.fontawesome.com/a130a3744b.js" crossorigin="anonymous"></script>
         <link rel="shortcut icon" href="../assets/imgs/favicon.png">
         <link rel="stylesheet" href="../style.css">
-        <title>FPW - Contato</title>
+        <title>FPW - Portfolio</title>
     </head>
-        
+
     <body class="scrollBar">
         <header>
             <ul>
-                <li><a class="link" href="../index.html">Início</a></li>
-                <li><a class="link" href="../index.html#about">Sobre mim</a></li>
-                <li><a class="link" href="./portfolio.html">Portfolio</a></li>
-                <li><a class="link" href="contact.html">Contato</a></li>
-                <li><a class="link" href="https://senacscs.github.io/t2/blank/curriculo/index.html">Currículo</a></li>
+            <li><a class="link" href="../index.html">Início</a></li>
+            <li><a class="link" href="../index.html#about">Sobre mim</a></li>
+            <li><a class="link" href="portfolio.html">Portfolio</a></li>
+            <li><a class="link" href="./contact.html">Contato</a></li>
+            <li><a class="link" href="https://senacscs.github.io/t2/blank/curriculo/index.html">Currículo</a></li>
             </ul>
         </header>
-
+        
         <main>
-            <h2>Contato</h2>
-            <section id="contact">
-                <form id="contact-form">
-                    <input
-                        type="text"
-                        class="form-control"
-                        id="name"
-                        placeholder="NOME"
-                        name="name"
-                        required="required">
+            <h2>Portfolio</h2>
+            <section>
+                <div class="cards-container">
+                    <div class="card">
+                        <div class="card-content">
+                            <h3>Booklovers</h3>
+                            <p>Formulário de pesquisa sobre interesses literários.</p>
+                            <div class="card-footer" >
+                                <button class="card-button" onclick="window.location.href='https://giiovanaa.github.io/book-lovers-form/'">Acesse</button>
+                                <div class="card-icon">→</div>
+                            </div>
+                        </div>
+                    </div>
 
-                        <input
-                            type="email"
-                            class="form-control"
-                            id="email"
-                            placeholder="EMAIL"
-                            name="email"
-                            required="required">
-
-                            <textarea
-                                class="form-control"
-                                rows="5"
-                                placeholder="MENSAGEM"
-                                name="message"
-                                required="required"></textarea>
-
-                        <button class="btn btn-primary send-button" id="submit" type="submit">
-                            <span class="send-text">ENVIAR</span>
-                        </button>
-                </form>
-
+                    <div class="card">
+                        <div class="card-content">
+                            <h3>Fundamentos de Desenvolvimento</h3>
+                            <p>Trabalho desenvolvido para a disciplina.</p>
+                            <div class="card-footer" onclick="window.location.href='https://giiovanaa.github.io/trabalho_FDS/'">
+                                <button class="card-button">Acesse</button>
+                                <div class="card-icon">→</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <h3>Projetos</h3>
+                            <p>Lista de projetos com cards divertidos.</p>
+                            <div class="card-footer" >
+                                <button class="card-button" onclick="window.location.href='https://senacscs.github.io/t2/blank/projetos/index.html'">Acesse</button>
+                                <div class="card-icon">→</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <h3>Livros</h3>
+                            <p>Indicações de leituras.</p>
+                            <div class="card-footer" >
+                                <button class="card-button" onclick="window.location.href='https://senacscs.github.io/t2/blank/projetos/booklist/'">Acesse</button>
+                                <div class="card-icon">→</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
         </main>
-
-        <footer>
-            <ul class="social-media-list">
-                <li><a href="https://github.com/giiovanaa" target="_blank" class="contact-icon">
-                        <i class="fa fa-github" aria-hidden="true"></i></a>
-                </li>
-                <li><a href="https://codepen.io/giiovana" target="_blank" class="contact-icon">
-                        <i class="fa fa-codepen" aria-hidden="true"></i></a>
-                </li>
-                <li><a href="https://www.instagram.com/giovana.blank/" target="_blank" class="contact-icon">
-                        <i class="fa fa-instagram" aria-hidden="true"></i></a>
-                </li>
-            </ul>
-        </footer>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const form = document.querySelector('#contact-form');
-
-            form.addEventListener('submit', (e) => {
-                e.preventDefault();
-                alert('Este formulário não está funcional. Por favor, entre em contato diretamente pelas redes sociais.');
-                form.reset();
-            });
-        });
-    </script>
     </body>
 </html>
